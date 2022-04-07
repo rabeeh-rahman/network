@@ -1,0 +1,70 @@
+MES30s-Mac-mini:~ mca$ pwd
+/Users/mca
+
+MES30s-Mac-mini:~ mca$ ls
+Applications	Movies		binary.c	mySQL		stacklist.c
+Desktop		Music		bubble.c	name.txt	sum.py
+Documents	Pictures	infix.c		names		varpass.py
+Downloads	Public		keyword.py	phone.txt
+Library		a.out		lambda.py	queue_array.c
+MES30s-Mac-mini:~ mca$ 
+
+MES30s-Mac-mini:~ mca$ cd desktop
+MES30s-Mac-mini:desktop mca$ cd rabeeh
+
+MES30s-Mac-mini:rabeeh m
+ca$ ls -ltotal 8
+drwxr-xr-x  2 mca  staff  68 Apr  5 14:16 arr
+-rw-r--r--  1 mca  staff   3 Apr  5 14:27 my.txt
+-rw-r--r--  1 mca  staff   0 Apr  5 14:21 newfile.txt
+-rw-r--r--  1 mca  staff   0 Apr  5 14:22 py.py
+
+MES30s-Mac-mini:rabbet mca$ history
+1  pwd
+2  ls
+3  cd desktop
+4  ls -l
+
+MES30s-Mac-mini:rabeeh mca$ cat my.txt
+Name	  : rabeehu rahman
+Department:MCA
+
+MES30s-Mac-mini:rabeeh mca$ grep -c "a" my.txt
+2
+
+MES30s-Mac-mini:rabeeh mca$ mkdir mescse
+MES30s-Mac-mini:rabeeh mca$ ls
+arr		mescse		my.txt		newfile.txt	py.py
+
+MES30s-Mac-mini:rabeeh mca$ rmdir mescse
+MES30s-Mac-mini:rabeeh mca$ ls
+arr		my.txt		newfile.txt	py.py
+
+MES30s-Mac-mini:rabeeh mca$ more my.txt
+Name      : rabeehu rahman
+Department:MCA
+
+MES30s-Mac-mini:rabeeh mca$ chmod -r my.txt
+MES30s-Mac-mini:rabeeh mca$ head my.txt
+head: my.txt: Permission denied
+MES30s-Mac-mini:rabeeh mca$ chmod a+r my.txt
+MES30s-Mac-mini:rabeeh mca$ head my.txt
+Name	  :rabeehu rahman 
+Department:MCA
+
+MES30s-Mac-mini:rabeeh mca$ ls
+arr		my.txt		newfile.txt	py.py
+MES30s-Mac-mini:rabeeh mca$ mv my.txt iam.txt
+MES30s-Mac-mini:rabeeh mca$ ls
+arr		iam.txt		newfile.txt	py.py
+
+MES30s-Mac-mini:rabeeh mca$ who am i
+mca      ttys000  Apr  7 15:07 
+
+MES30s-Mac-mini:rabeeh mca$ tail iam.txt
+Name	  : rabeehu rahman 
+Department:MCA
+
+MES30s-Mac-mini:rabeeh mca$ head -1 iam.txt
+Name	  : rabeehu rahman 
+
