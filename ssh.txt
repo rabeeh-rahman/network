@@ -1,0 +1,109 @@
+[mca@localhost Desktop]$ ip config
+Object "config" is unknown, try "ip help".
+[mca@localhost Desktop]$ if config
+> if config^C
+[mca@localhost Desktop]$ if confiq
+> ^C
+[mca@localhost Desktop]$ ipconfig
+bash: ipconfig: command not found
+[mca@localhost Desktop]$ ifconfig
+eth1      Link encap:Ethernet  HWaddr E0:D5:5E:0C:D9:4B  
+          inet addr:172.20.3.36  Bcast:172.20.255.255  Mask:255.255.0.0
+          inet6 addr: fe80::e2d5:5eff:fe0c:d94b/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:33996 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:6081 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:10247866 (9.7 MiB)  TX bytes:696316 (679.9 KiB)
+
+lo        Link encap:Local Loopback  
+          inet addr:127.0.0.1  Mask:255.0.0.0
+          inet6 addr: ::1/128 Scope:Host
+          UP LOOPBACK RUNNING  MTU:16436  Metric:1
+          RX packets:3947 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:3947 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:0 
+          RX bytes:249918 (244.0 KiB)  TX bytes:249918 (244.0 KiB)
+
+virbr0    Link encap:Ethernet  HWaddr 52:54:00:51:22:F7  
+          inet addr:192.168.122.1  Bcast:192.168.122.255  Mask:255.255.255.0
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:0 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:0 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:0 
+          RX bytes:0 (0.0 b)  TX bytes:0 (0.0 b)
+
+[mca@localhost Desktop]$ su
+Password: 
+[root@localhost Desktop]# ssh mca@172.20.3.37
+mca@172.20.3.37's password: 
+Permission denied, please try again.
+mca@172.20.3.37's password: 
+Permission denied, please try again.
+mca@172.20.3.37's password: 
+
+[root@localhost Desktop]# ssh 172.20.3.37
+root@172.20.3.37's password: 
+Last login: Tue Apr 12 20:12:54 2022 from 172.20.3.36
+[root@localhost ~]# cd Desktop
+[root@localhost Desktop]# ls
+EDU1664_Launcher
+[root@localhost Desktop]# mkdir ashuiq
+[root@localhost Desktop]# ls
+ashuiq  EDU1664_Launcher
+[root@localhost Desktop]# ssh 172.20.3.59
+root@172.20.3.59's password: 
+Last login: Tue Apr 12 20:09:04 2022 from 172.20.3.37
+[root@localhost ~]# cd Desktop
+[root@localhost Desktop]# mkdir meshello
+[root@localhost Desktop]# ls
+File1.txt  meshello  Mushahida  N2  nihal
+[root@localhost Desktop]# exit
+logout
+Connection to 172.20.3.59 closed.
+[root@localhost Desktop]# ssh 172.20.3.60
+The authenticity of host '172.20.3.60 (172.20.3.60)' can't be established.
+RSA key fingerprint is 0f:09:cb:3d:2b:6a:5f:83:f9:21:d8:4c:cc:f0:28:bb.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added '172.20.3.60' (RSA) to the list of known hosts.
+root@172.20.3.60's password: 
+Last login: Tue Apr 12 20:05:44 2022 from 172.20.3.59
+[root@localhost ~]# cd Desktop
+[root@localhost Desktop]# mkdir hiimes
+[root@localhost Desktop]# ls
+ashiq  hiimes  mcahellop  nihad
+[root@localhost Desktop]# exit
+logout
+Connection to 172.20.3.60 closed.
+[root@localhost Desktop]# ssh 172.20.3.59
+root@172.20.3.59's password: 
+Last login: Tue Apr 12 20:13:44 2022 from 172.20.3.103
+[root@localhost ~]# cd DEsktop
+-bash: cd: DEsktop: No such file or directory
+[root@localhost ~]# cd Desktop
+[root@localhost Desktop]# ls
+File1.txt  meshello  Mushahida  N2  nihal  YUSRA
+[root@localhost Desktop]# exit
+logout
+Connection to 172.20.3.59 closed.
+[root@localhost Desktop]# ssh 172.20.3.59
+root@172.20.3.59's password: 
+Last login: Tue Apr 12 20:16:28 2022 from 172.20.3.37
+[root@localhost ~]# exit
+logout
+Connection to 172.20.3.59 closed.
+[root@localhost Desktop]# ssh 172.20.3.60
+root@172.20.3.60's password: 
+Last login: Tue Apr 12 20:15:48 2022 from 172.20.3.37
+[root@localhost ~]# ls
+anaconda-ks.cfg  get-pip.py          Music     Templates
+Desktop          hellomesce          nihad     upgrade.log
+Documents        install.log         Pictures  upgrade.log.syslog
+Downloads        install.log.syslog  Public    Videos
+[root@localhost ~]# cd Desktop
+[root@localhost Desktop]# ls
+ashiq  hiimes  mcahellop  nihad  nihal  Screenshot.png
+[root@localhost Desktop]# c^C
+You have new mail in /var/spool/mail/root
+[root@localhost Desktop]# ^A
+
